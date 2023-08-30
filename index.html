@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+
+	<link rel="preconnect" href="https://rsms.me/">
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+
+	<main>
+		<div class="portfolio">
+
+			<div class="p-left">
+				<div class="bio">
+					<p class="bio-name">Arthur Surov</p>
+					<p class="bio-level">Junior Go developer</p>
+					<p class="bio-info">Coding is my passion!</p>
+				</div>
+
+				<div class="contacts">
+					
+				</div>
+			</div>
+
+			<div class="p-right">
+
+				<div class="about">
+					<div>
+						I studied at the
+						<a class="link" href="http://donntu.ru">Donetsk National Technical University</a>,
+						<a class="link" href="http://pi.donntu.ru/">«Software Engineering»</a> faculty.
+						While studying I finded the Go language and start writing code on it.
+						I aslo write all my project in this
+						<div class="bold">god-like language</div>.
+					</div>
+
+					<br>
+
+					<div>
+						My ideas started from single-file projects and grew to client-server applicatiopns
+						using tools like gRPC, Apache Kafka, JWT etc.
+					</div>
+				</div>
+
+				<div class="bio-projects">
+					<div class="project" onmouseover="highlightProjects(this)" onmouseout="resetHighlight()">
+						<div class="project-right">
+							<div class="project-name">era</div>
+							<div class="project-description">
+								Application for automating the functional of the university.
+								<br><br>
+								That app have many services: 
+								tasks, tests, cources, authorization, timetable, progress, etc.
+								System has few roles: system admin, university admin, teacher, student
+							</div>
+							<div class="project-stack">
+								<div class="project-tool">Go</div>
+								<div class="project-tool">gRPC</div>
+								<div class="project-tool">Microservices</div>
+								<div class="project-tool">PostgreSQL</div>
+								<div class="project-tool">Redis</div>
+								<div class="project-tool">JWT</div>
+								<div class="project-tool">REST API</div>
+								<div class="project-tool">Clean Architecture</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="project" onmouseover="highlightProjects(this)" onmouseout="resetHighlight()">
+						<div class="project-right">
+							<div class="project-name">gosint</div>
+							<div class="project-description">
+								Application for automating OSINT functionality.
+								<br><br>
+								The main difference from other projects is the microservices architecture idea.
+								App has many sources of information (services) which take requests from Kafka queue and put result to the same place.
+								The sender receives response via bidirectional gRPC stream and does anything with the information
+							</div>
+							<div class="project-stack">
+								<div class="project-tool">Go</div>
+								<div class="project-tool">gRPC</div>
+								<div class="project-tool">Microservices</div>
+								<div class="project-tool">Apache Kafka</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="project" onmouseover="highlightProjects(this)" onmouseout="resetHighlight()">
+						<div class="project-right">
+							<div class="project-name">mail client</div>
+							<div class="project-description">
+								Client-server mail client with AES & RSA encryption.
+								<br><br>
+								This application allows users to exchange RSA keys
+								with users of this client (yes, this is shit) and chat with them
+							</div>
+							<div class="project-stack">
+								<div class="project-tool">Go</div>
+								<div class="project-tool">PostgreSQL</div>
+								<div class="project-tool">IMAP</div>
+								<div class="project-tool">SMTP</div>
+								<div class="project-tool">test coverage</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="project" onmouseover="highlightProjects(this)" onmouseout="resetHighlight()">
+						<div class="project-right">
+							<div class="project-name">xpp</div>
+							<div class="project-description">
+								XLib wrapper
+								<br><br>
+								Allows creating windows, buttons, text fields (text/numbers only) and graphics.
+								Support events
+							</div>
+							<div class="project-stack">
+								<div class="project-tool">C++</div>
+								<div class="project-tool">XLib</div>
+								<div class="project-tool">Linux</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="project" onmouseover="highlightProjects(this)" onmouseout="resetHighlight()">
+						<div class="project-right">
+							<div class="project-name">external filesystem</div>
+							<div class="project-description">
+								ext4 Linux-like CLI filesystem with subfolders support
+							</div>
+							<div class="project-stack">
+								<div class="project-tool">C</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+</body>
+</html>

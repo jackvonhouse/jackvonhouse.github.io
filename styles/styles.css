@@ -1,0 +1,145 @@
+:root { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+main {
+	background-color: #0f172a;
+	padding: 64px 200px 64px 200px;
+}
+
+.portfolio {
+	display: flex;
+	flex-direction: row;
+}
+
+.p-left {
+	position: sticky;
+	width: 40%;
+	padding: 32px;
+	top: 0px;
+	align-self: flex-start;
+	text-align: left;
+}
+
+.bio > p {
+	padding: 5px;
+}
+
+.p-right {
+	width: 60%;
+}
+
+.bio-name {
+	color: #e5e7eb;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.bio-level {
+	color: #e5e7eb;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+.bio-info {
+	color: #94a3b8;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.about {
+	padding: 64px 0px 64px 0px;
+	color: #94a3b8;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+.bold {
+	color: #e5e7eb;
+	display: inline;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.link {
+	color: #e5e7eb;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #5eead4;
+}
+
+.project {
+	display: flex;
+	flex-basis: 50%;
+	border: 2px solid transparent;
+	padding: 20px;
+}
+
+.project.active {
+	border-radius: 20px;
+	border: 2px solid;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.project.inactive {
+	opacity: 0.5;
+	border: 2px solid transparent;
+}
+
+.project-left {
+	margin-right: 10px;
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-level {
+	color: #94a3b8;
+}
+
+.project-name {
+	color: #e5e7eb;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.project-description {
+	color: #94a3b8;
+	font-size: 1.25em;
+}
+
+.project-stack {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	margin: 8px;
+	row-gap: 10px;
+}
+
+.project-tool {
+	color: #5eead4;
+	background-color: rgba(45, 212, 191, 0.1);
+	border-radius: 9999px;
+	align-items: center;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	user-select: none;
+	margin-right: 8px;
+}
+
+.project-name, .project-description {
+	padding-bottom: 8px;
+}
