@@ -11,29 +11,10 @@ body {
 
 main {
 	background-color: #0f172a;
-	padding: 64px 200px 64px 200px;
-}
-
-.portfolio {
-	display: flex;
-	flex-direction: row;
-}
-
-.p-left {
-	position: sticky;
-	width: 40%;
-	padding: 32px;
-	top: 0px;
-	align-self: flex-start;
-	text-align: left;
 }
 
 .bio > p {
 	padding: 5px;
-}
-
-.p-right {
-	width: 60%;
 }
 
 .bio-name {
@@ -55,7 +36,6 @@ main {
 }
 
 .about {
-	padding: 64px 0px 64px 0px;
 	color: #94a3b8;
 	font-size: 1.25em;
 	font-weight: normal;
@@ -79,31 +59,21 @@ main {
 	color: #5eead4;
 }
 
+.contacts {
+	padding-top: 50px;
+}
+
+.contacts > a {
+	width: 48px;
+	height: 48px;
+	margin: 10px;
+}
+
 .project {
 	display: flex;
 	flex-basis: 50%;
 	border: 2px solid transparent;
-	padding: 20px;
-}
-
-.project.active {
-	border-radius: 20px;
-	border: 2px solid;
-	border: 2px solid rgba(255, 255, 255, 0.2);
-	background: rgba(255, 255, 255, 0.1);
-}
-
-.project.inactive {
-	opacity: 0.5;
-	border: 2px solid transparent;
-}
-
-.project-left {
-	margin-right: 10px;
-	width: 15%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-bottom: 50px;
 }
 
 .project-level {
@@ -142,4 +112,71 @@ main {
 
 .project-name, .project-description {
 	padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 1000px) {
+	main {
+		padding: 64px 200px 64px 200px;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.p-left {
+		position: sticky;
+		width: 40%;
+		height: 100%;
+		padding: 32px;
+		top: 0px;
+		align-self: flex-start;
+		text-align: left;
+	}
+
+	.p-right {
+		width: 60%;
+	}
+
+	.about {
+		padding: 64px 0px 64px 0px;
+	}
+	
+	.about > p, .bio-projects > p {
+		display: none;
+	}
+
+	.project.active {
+		border-radius: 20px;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	.project.inactive {
+		opacity: 0.5;
+		border: 2px solid transparent;
+	}
+
+	.project {
+		padding: 20px;
+	}
+}
+
+@media only screen and (min-width: 0px) {
+	main {
+		padding: 70px 40px 70px 40px;
+		color: white;
+	}
+
+	.about > p, .bio-projects > p {
+		color: #e5e7eb;
+		font-size: 2em;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: sticky;
+		top: 0;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		backdrop-filter: blur(10px);
+	}
 }
