@@ -1,0 +1,74 @@
+root { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+main {
+	background-color: #0f172a;
+
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 2em;
+	font-weight: bold;
+	color: #e5e7eb;
+	padding: 70px 40px 20px 40px;
+}
+
+.description {
+	font-size: 1.25em;
+	color: #94a3b8;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.project > div {
+	padding: 40px;
+}
+
+.subject > p {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #e5e7eb;
+	padding-bottom: 20px;
+}
+
+.project > div {
+	font-size: 1.25em;
+	color: #94a3b8;
+}
+
+.images {
+	filter: blur(15px);
+}
+
+.images:hover {
+	filter: none;
+}
+
+swiper-container {
+	padding: 20px;
+}
+
+swiper-slide {
+	text-align: center;
+	margin: auto;
+}
+
+.link {
+	color: #e5e7eb;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #5eead4;
+}

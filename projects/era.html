@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>era</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+	<link rel="stylesheet" href="../styles/project.css">
+
+	<link rel="preconnect" href="https://rsms.me/">
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+	<main>
+		<div class="page">
+			<div class="name">era</div>
+			<div class="description">Application for automating the functional of the university</div>
+			<div class="project">
+				<div class="p-architecture subject">
+					<p>Architecture</p>
+
+					Most of the systems with similar functionality have a monolithic architecture,
+					it was decided to try divide a monolithic application into services with a specific functionality
+
+					<swiper-container class="images" pagination="true">
+						<swiper-slide><img src="../images/projects/era/arch1.jpg" alt="Architecture"></swiper-slide>
+						<swiper-slide><img src="../images/projects/era/arch2.jpg" alt="Architecture"></swiper-slide>
+						<swiper-slide><img src="../images/projects/era/arch3.jpg" alt="Architecture"></swiper-slide>
+					</swiper-container>
+
+					The gRPC protocol is used to transfer requests.
+					Why? <b>Faster</b>, <b>safer</b> and <b>more beautiful</b> instead of jRPC and others
+					<br><br>
+					gRPC webhooks used to update the information in many microservices
+				</div>
+
+				<div class="p-roles subject">
+					<p>Roles</p>
+
+					Student, teacher, manager, system and university administrator
+				</div>
+
+				<div class="p-database subject">
+					<p>Database</p>
+
+					DBMS for storing information - PostgreSQL and Redis
+
+					<swiper-container class="images" pagination="true">
+						<swiper-slide><img src="../images/projects/era/db-schema1.jpg" alt="Database schema"></swiper-slide>
+						<swiper-slide><img src="../images/projects/era/db-schema2.jpg" alt="Database schema"></swiper-slide>
+						<swiper-slide><img src="../images/projects/era/db-schema3.jpg" alt="Database schema"></swiper-slide>
+						<swiper-slide><img src="../images/projects/era/db-schema3.jpg" alt="Database schema"></swiper-slide>
+					</swiper-container>
+				</div>
+
+				<div class="p-more subject">
+					<p>More information</p>
+
+					Check <a class="link" href="https://docs.google.com/presentation/d/1hw6D9frNznw3JvWLEL8R63vgNYpzm56V5bjf82CG_9g/edit?usp=sharing">presentation</a> for more details
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

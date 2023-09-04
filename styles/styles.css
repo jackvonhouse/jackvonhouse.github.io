@@ -84,6 +84,11 @@ main {
 	color: #e5e7eb;
 	font-size: 1.5em;
 	font-weight: bold;
+	text-decoration: none;
+}
+
+.project-name:hover {
+	color: #5eead4;
 }
 
 .project-description {
@@ -165,7 +170,6 @@ main {
 @media only screen and (min-width: 0px) {
 	main {
 		padding: 70px 40px 70px 40px;
-		color: white;
 	}
 
 	.about > p, .bio-projects > p {
